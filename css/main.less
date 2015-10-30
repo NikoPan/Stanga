@@ -1,0 +1,216 @@
+@green: #a4c400;
+@blue: #00b0de;
+@yellow: #fdc300;
+@orange: #fe7e00;
+@dark-gray: #444444;
+@light-gray: #8b8b8b;
+@background-gray: #e2dcd7;
+@menu-color: #f5f7f8;
+@normal-gray: #a6a9ab;
+@bold-gray: #525253;
+@button-gray: #e6eaed;
+
+@font-face {
+  font-family: Sansa Con Pro UltraBlack;
+  src: url("../fonts/SansaConPro-UltraBlack.otf");
+}
+
+@font-face {
+  font-family: Sansa Pro Normal;
+  src: url("../fonts/SansaPro-Normal.otf");
+}
+
+@font-face {
+  font-family: Sansa Pro SemiBold;
+  src: url("../fonts/SansaPro-SemiBold.otf");
+}
+
+//STYLE
+
+body {
+  background-color: @background-gray;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  a, a:visited {
+    text-decoration: none;
+  }
+  #wrapper {
+    width: 980px;
+    margin: 0 auto;
+    background-color: white;
+
+    #header {
+      font-family: "Sansa Pro Normal", Verdana, sans-serif;
+      #logo {
+        float: left;
+        div {
+          display: inline-block;
+        }
+      }
+      .title {
+        color: @blue;
+        font-size: 24px;
+        margin: 0;
+        font-family: "Sansa Con Pro UltraBlack", Verdana, sans-serif;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        color: @blue;
+        margin: 0;
+        font-family: "Sansa Pro SemiBold", Verdana, sans-serif;
+      }
+    }
+    #top-nav {
+      float: right;
+      h3 {
+        margin: 0;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px;
+        font-size: 12px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        display: inline;
+      }
+
+      li {
+        display: inline-block;
+        background-color: @button-gray;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 10px;
+        height: 20px;
+        vertical-align: top;
+
+        a, a:visited {
+          font-family: "Arial Black", sans-serif;
+          display: block;
+          font-size: 10px;
+        }
+        #fr {
+          color: @normal-gray;
+        }
+        #en {
+          color: @bold-gray;
+        }
+        input {
+          height: 25px;
+          width: 152px;
+          border: none;
+          border-radius: 5px;
+          background: #fff url("../images/picto.png") right center no-repeat;
+        }
+      }
+    }
+    #navigation {
+      padding: 0;
+      float: right;
+      background: url("../images/nav-bar.png") center repeat-x;
+      height: 41px;
+      //max-width: 780px;
+      .separator {
+        vertical-align: middle;
+        display: inline-block;
+        width: 1px;
+        height: 28px;
+
+        background: @menu-color url("../images/main-nav-separator.png") no-repeat center;
+      }
+      ul {
+      }
+      li {
+        display: inline;
+        margin: 0;
+
+        .submenu {
+          display: none;
+        }
+        a, a:visited {
+          font-family: "Sansa Pro Normal", Verdana, sans-serif;
+          padding: 15px;
+
+          font-size: 10px;
+          text-decoration: none;
+          color: @dark-gray;
+        }
+        a:hover{
+          background: @blue;
+        }
+      }
+    }
+    #main {
+
+      #visual-header {
+        img{
+          width: 980px;
+        }
+        #visual-header-info {
+          background-color: @green;
+          width: 544px;
+          position: relative;
+          bottom: 122px;
+          left: 0;
+          font-family: "Sansa Pro SemiBold", Verdana, sans-serif;
+          padding: 15px;
+          font-size: 1.05em;
+          color: white;
+
+        }
+      }
+      #solutions {
+        width: inherit;
+        height: inherit;
+        padding: 10px;
+        .block {
+          width: 300px;
+          height: inherit;
+          display: inline-block;
+          margin: 8px;
+          position: relative;
+
+          a {
+            .upper {
+              font-family: "Sansa Pro Normal", Verdana, sans-serif;
+              color: white;
+              margin: 0;
+              background: @blue;
+              vertical-align: middle;
+              padding: 15px 15px 15px 0;
+              font-size: 1.2em;
+              .arrow {
+                vertical-align: middle;
+                padding: 0 20px 0 15px;
+                display: inline-block;
+                width: 9px;
+                height: 22px;
+                background: @blue url("../images/white-info-arrow.png") center no-repeat;
+              }
+            }
+            img {
+              width: 300px;
+            }
+          }
+        }
+      }
+      #news{
+
+        .section{
+          display: inline;
+          h3{
+            font-family: "Sansa Con Pro Black", Verdana, sans-serif;
+          }
+        }
+        #latest{
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}
+
+
+

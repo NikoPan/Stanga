@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Sansa Con Pro UltraBlack;
+  src: url("../fonts/SansaConPro-UltraBlack.otf");
+}
+@font-face {
+  font-family: Sansa Pro Normal;
+  src: url("../fonts/SansaPro-Normal.otf");
+}
+@font-face {
+  font-family: Sansa Pro SemiBold;
+  src: url("../fonts/SansaPro-SemiBold.otf");
+}
+body {
+  background-color: #e2dcd7;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+body a,
+body a:visited {
+  text-decoration: none;
+}
+body #wrapper {
+  width: 980px;
+  margin: 0 auto;
+  background-color: white;
+}
+body #wrapper #header {
+  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+}
+body #wrapper #header #logo {
+  float: left;
+}
+body #wrapper #header #logo div {
+  display: inline-block;
+}
+body #wrapper #header .title {
+  color: #00b0de;
+  font-size: 24px;
+  margin: 0;
+  font-family: "Sansa Con Pro UltraBlack", Verdana, sans-serif;
+}
+body #wrapper #header .subtitle {
+  font-size: 14px;
+  color: #00b0de;
+  margin: 0;
+  font-family: "Sansa Pro SemiBold", Verdana, sans-serif;
+}
+body #wrapper #top-nav {
+  float: right;
+}
+body #wrapper #top-nav h3 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 12px;
+}
+body #wrapper #top-nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+body #wrapper #top-nav li {
+  display: inline-block;
+  background-color: #e6eaed;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 10px;
+  height: 20px;
+  vertical-align: top;
+}
+body #wrapper #top-nav li a,
+body #wrapper #top-nav li a:visited {
+  font-family: "Arial Black", sans-serif;
+  display: block;
+  font-size: 10px;
+}
+body #wrapper #top-nav li #fr {
+  color: #a6a9ab;
+}
+body #wrapper #top-nav li #en {
+  color: #525253;
+}
+body #wrapper #top-nav li input {
+  height: 25px;
+  width: 152px;
+  border: none;
+  border-radius: 5px;
+  background: #fff url("../images/picto.png") right center no-repeat;
+}
+body #wrapper #navigation {
+  padding: 0;
+  float: right;
+  background: url("../images/nav-bar.png") center repeat-x;
+  height: 41px;
+}
+body #wrapper #navigation .separator {
+  vertical-align: middle;
+  display: inline-block;
+  width: 1px;
+  height: 28px;
+  background: #f5f7f8 url("../images/main-nav-separator.png") no-repeat center;
+}
+body #wrapper #navigation li {
+  display: inline;
+  margin: 0;
+}
+body #wrapper #navigation li .submenu {
+  display: none;
+}
+body #wrapper #navigation li a,
+body #wrapper #navigation li a:visited {
+  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+  padding: 15px;
+  font-size: 10px;
+  text-decoration: none;
+  color: #444444;
+}
+body #wrapper #navigation li a:hover {
+  background: #00b0de;
+}
+body #wrapper #main #visual-header img {
+  width: 980px;
+}
+body #wrapper #main #visual-header #visual-header-info {
+  background-color: #a4c400;
+  width: 544px;
+  position: relative;
+  bottom: 122px;
+  left: 0;
+  font-family: "Sansa Pro SemiBold", Verdana, sans-serif;
+  padding: 15px;
+  font-size: 1.05em;
+  color: white;
+}
+body #wrapper #main #solutions {
+  width: inherit;
+  height: inherit;
+  padding: 10px;
+}
+body #wrapper #main #solutions .block {
+  width: 300px;
+  height: inherit;
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+body #wrapper #main #solutions .block a .upper {
+  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  background: #00b0de;
+  vertical-align: middle;
+  padding: 15px 15px 15px 0;
+  font-size: 1.2em;
+}
+body #wrapper #main #solutions .block a .upper .arrow {
+  vertical-align: middle;
+  padding: 0 20px 0 15px;
+  display: inline-block;
+  width: 9px;
+  height: 22px;
+  background: #00b0de url("../images/white-info-arrow.png") center no-repeat;
+}
+body #wrapper #main #solutions .block a img {
+  width: 300px;
+}
+body #wrapper #main #news .section {
+  display: inline;
+}
+body #wrapper #main #news .section h3 {
+  font-family: "Sansa Con Pro Black", Verdana, sans-serif;
+}
+body #wrapper #main #news #latest {
+  max-width: 50%;
+}
