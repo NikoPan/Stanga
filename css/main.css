@@ -10,152 +10,295 @@
   font-family: Sansa Pro SemiBold;
   src: url("../fonts/SansaPro-SemiBold.otf");
 }
+@font-face {
+  font-family: Sansa Pro Light;
+  src: url("../fonts/SansaPro-Light.otf");
+}
+@font-face {
+  font-family: Sansa Pro Black;
+  src: url("../fonts/SansaPro-Black.otf");
+}
 body {
   background-color: #e2dcd7;
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 body a,
 body a:visited {
   text-decoration: none;
 }
-body #wrapper {
-  width: 980px;
+body img {
+  max-width: 100%;
+}
+body .container {
+  max-width: 980px;
+  width: 100%;
   margin: 0 auto;
+  background-color: #f5f7f8;
+  padding: 0 0 10px 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+body .container .row {
+  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body .container #header {
   background-color: white;
 }
-body #wrapper #header {
-  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+body .container #header #logo a img {
+  padding: 10px 0 10px 10px;
 }
-body #wrapper #header #logo {
-  float: left;
+@media (max-width: 780px) {
+  body .container #header #logo a img {
+    width: 25%;
+    display: inline-block;
+    margin-top: 20px ;
+  }
 }
-body #wrapper #header #logo div {
+body .container #header #logo .title {
   display: inline-block;
-}
-body #wrapper #header .title {
   color: #00b0de;
-  font-size: 24px;
+  padding: 10px 0 10px 0;
+  margin-top: 30px;
+}
+body .container #header #logo .title h1 {
+  font-size: 1.5em;
+  padding: 0;
   margin: 0;
   font-family: "Sansa Con Pro UltraBlack", Verdana, sans-serif;
 }
-body #wrapper #header .subtitle {
-  font-size: 14px;
-  color: #00b0de;
+body .container #header #logo .title h2 {
   margin: 0;
+  font-size: 0.85em;
   font-family: "Sansa Pro SemiBold", Verdana, sans-serif;
 }
-body #wrapper #top-nav {
+body .container #header #logo h6 {
+  color: #525253;
   float: right;
+  padding: 10px 10px 10px 0;
 }
-body #wrapper #top-nav h3 {
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px;
-  font-size: 12px;
+@media (max-width: 600px) {
+  body .container #header #logo h6 {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
 }
-body #wrapper #top-nav ul {
+body .container #top-nav {
+  float: right;
+  padding-right: 10px;
+}
+body .container #top-nav ul {
   margin: 0;
   padding: 0;
   display: inline;
 }
-body #wrapper #top-nav li {
+body .container #top-nav li {
   display: inline-block;
   background-color: #e6eaed;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 10px;
-  height: 20px;
   vertical-align: top;
+  height: 45px;
 }
-body #wrapper #top-nav li a,
-body #wrapper #top-nav li a:visited {
+body .container #top-nav li a,
+body .container #top-nav li a:visited {
   font-family: "Arial Black", sans-serif;
   display: block;
-  font-size: 10px;
+  font-size: 0.625em;
 }
-body #wrapper #top-nav li #fr {
+body .container #top-nav li .fr {
   color: #a6a9ab;
 }
-body #wrapper #top-nav li #en {
+body .container #top-nav li .en {
   color: #525253;
 }
-body #wrapper #top-nav li input {
+body .container #top-nav li input {
   height: 25px;
   width: 152px;
   border: none;
   border-radius: 5px;
   background: #fff url("../images/picto.png") right center no-repeat;
 }
-body #wrapper #navigation {
-  padding: 0;
-  float: right;
-  background: url("../images/nav-bar.png") center repeat-x;
-  height: 41px;
-}
-body #wrapper #navigation .separator {
-  vertical-align: middle;
-  display: inline-block;
-  width: 1px;
-  height: 28px;
-  background: #f5f7f8 url("../images/main-nav-separator.png") no-repeat center;
-}
-body #wrapper #navigation li {
-  display: inline;
-  margin: 0;
-}
-body #wrapper #navigation li .submenu {
+body .container .menu {
   display: none;
-}
-body #wrapper #navigation li a,
-body #wrapper #navigation li a:visited {
-  font-family: "Sansa Pro Normal", Verdana, sans-serif;
-  padding: 15px;
-  font-size: 10px;
+  background: url("../images/nav-bar.png") repeat;
+  height: 41px;
   text-decoration: none;
-  color: #444444;
+  text-align: center;
+  font-weight: bold;
+  color: #525253;
+  padding: 10px;
+  margin: 0 10px 0 10px;
 }
-body #wrapper #navigation li a:hover {
-  background: #00b0de;
+body .container .navigation {
+  float: right;
+  padding: 0;
+  font-size: 0.625em;
+  background: url("../images/nav-bar.png") repeat;
+  min-height: 41px;
 }
-body #wrapper #main #visual-header img {
-  width: 980px;
+body .container .navigation .submenu {
+  display: none;
+  margin-top: 20px;
+  padding: 0;
+  position: absolute;
+  background-color: white;
 }
-body #wrapper #main #visual-header #visual-header-info {
+body .container .navigation .submenu li {
+  display: block;
+  width: 177px;
+  height: 38px;
+  border-bottom: 1px solid #e6eaed;
+  background-color: white;
+}
+body .container .navigation .submenu li a {
+  color: #00b0de;
+  padding-right: 0;
+  border: none;
+}
+body .container .navigation li {
+  display: inline-block;
+  padding: 13px 0 13px 0;
+}
+body .container .navigation li a {
+  color: #525253;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+  border-right: 1px solid gray;
+}
+body .container .navigation li:last-child a {
+  border: none;
+}
+body .container .navigation > li:hover {
+  background: url("../images/selected-back.png") bottom repeat-x, url("../images/selected-center.png") bottom center no-repeat;
+}
+@media (max-width: 780px) {
+  body .container .menu {
+    display: block;
+  }
+  body .container .navigation {
+    display: none;
+    font-size: 0.75em;
+    background: none;
+    text-align: center;
+    float: none;
+  }
+  body .container .navigation li {
+    display: block;
+    border-bottom: 1px solid #e6eaed;
+    background-color: white;
+  }
+  body .container .navigation li a {
+    width: 780px;
+    color: #525253;
+    padding: 20px;
+    margin: 0 auto;
+    border: none;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+  }
+}
+@media (max-width: 780px) and (max-width: 780px) {
+  body .container .navigation > li:hover {
+    background: white;
+  }
+  body .container .navigation > li:hover a {
+    width: 780px;
+    color: #00b0de;
+    text-align: center;
+  }
+}
+body .container #main #visual-header {
+  display: inline-block;
+  max-height: 315px;
+  background: white;
+}
+body .container #main #visual-header .visual-header-info {
+  margin: 0;
   background-color: #a4c400;
-  width: 544px;
+  max-width: 540px;
   position: relative;
-  bottom: 122px;
-  left: 0;
+  bottom: 100px;
   font-family: "Sansa Pro SemiBold", Verdana, sans-serif;
   padding: 15px;
-  font-size: 1.05em;
+  font-size: 1em;
   color: white;
 }
-body #wrapper #main #solutions {
-  width: inherit;
-  height: inherit;
-  padding: 10px;
+body .container #main #visual-header .header-button {
+  width: 93px;
+  height: 93px;
+  background: #e2dcd7;
+  border-radius: 50%;
 }
-body #wrapper #main #solutions .block {
-  width: 300px;
+body .container #main #visual-header .header-button a {
+  margin: 0 auto;
+  width: 86px;
+  height: 86px;
+}
+body .container #main #visual-header .left {
+  position: relative;
+  float: left;
+  left: -45px;
+  top: -200px;
+}
+body .container #main #visual-header .right {
+  position: relative;
+  float: right;
+  right: -45px;
+  top: -200px;
+}
+@media (max-width: 768px) {
+  body .container #main #visual-header {
+    padding: 10px;
+  }
+  body .container #main #visual-header .left,
+  body .container #main #visual-header .right {
+    display: none;
+  }
+  body .container #main #visual-header .visual-header-info {
+    position: inherit;
+    max-width: 768px;
+  }
+}
+body .container #main .solutions {
+  padding: 10px;
+  background-color: white;
+}
+body .container #main .solutions a {
+  text-decoration: none;
+}
+body .container #main .solutions h5 span {
+  font-family: "Sansa Con Pro UltraBlack", Verdana, sans-serif;
+}
+body .container #main .solutions .block {
+  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+  padding: 15px;
   height: inherit;
   display: inline-block;
-  margin: 8px;
   position: relative;
 }
-body #wrapper #main #solutions .block a .upper {
-  font-family: "Sansa Pro Normal", Verdana, sans-serif;
+body .container #main .solutions .block #industrial ul,
+body .container #main .solutions .block #challenges ul {
+  padding: 20px;
+  font-size: 0.75em;
+  list-style-image: url("../images/bullet.png");
+  color: #525253;
+}
+body .container #main .solutions .block .upper {
+  cursor: pointer;
   color: white;
   margin: 0;
   background: #00b0de;
   vertical-align: middle;
   padding: 15px 15px 15px 0;
-  font-size: 1.2em;
+  font-size: 1em;
 }
-body #wrapper #main #solutions .block a .upper .arrow {
+body .container #main .solutions .block .upper .arrow {
   vertical-align: middle;
   padding: 0 20px 0 15px;
   display: inline-block;
@@ -163,15 +306,236 @@ body #wrapper #main #solutions .block a .upper .arrow {
   height: 22px;
   background: #00b0de url("../images/white-info-arrow.png") center no-repeat;
 }
-body #wrapper #main #solutions .block a img {
+body .container #main .solutions .block #industrial .info-block,
+body .container #main .solutions .block #challenges .info-block {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  left: 304px;
+  width: 645px;
+  background: #a6e3f3;
+  height: 100%;
+  min-height: 175px;
+}
+body .container #main .solutions .block #industrial .info-block ul,
+body .container #main .solutions .block #challenges .info-block ul {
+  display: inline-block;
   width: 300px;
 }
-body #wrapper #main #news .section {
-  display: inline;
+body .container #main .solutions .block #industrial .info-block #industrial-x,
+body .container #main .solutions .block #challenges .info-block #industrial-x,
+body .container #main .solutions .block #industrial .info-block #challenges-x,
+body .container #main .solutions .block #challenges .info-block #challenges-x {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-body #wrapper #main #news .section h3 {
+body .container #main .solutions .block #challenges-nfo {
+  max-width: 325px;
+}
+@media (max-width: 700px) {
+  body .container #main .solutions .block p {
+    display: block;
+    max-width: 460px;
+  }
+  body .container #main .solutions .block #industrial,
+  body .container #main .solutions .block #challenges {
+    width: 460px;
+    max-width: 100%;
+    background: #a6e3f3;
+  }
+  body .container #main .solutions .block #industrial .info-block,
+  body .container #main .solutions .block #challenges .info-block {
+    display: block;
+    position: inherit;
+    width: 100%;
+    height: 100%;
+  }
+  body .container #main .solutions .block #industrial .info-block ul,
+  body .container #main .solutions .block #challenges .info-block ul {
+    display: inline-block;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: 5px;
+  }
+  body .container #main .solutions .block #industrial .info-block ul li,
+  body .container #main .solutions .block #challenges .info-block ul li {
+    padding: 5px;
+  }
+  body .container #main .solutions .block #industrial img,
+  body .container #main .solutions .block #challenges img {
+    display: none;
+  }
+  body .container #main .solutions .block #industrial #industrial-nfo ul,
+  body .container #main .solutions .block #challenges #industrial-nfo ul {
+    width: 210px;
+  }
+  body .container #main .solutions #block1 .upper .arrow,
+  body .container #main .solutions #block2 .upper .arrow {
+    background: #00b0de url("../images/down-arrow.png") center no-repeat;
+  }
+}
+body .container #main #news {
+  max-width: 980px;
+}
+body .container #main #news #latest article {
+  font-family: Verdana, sans-serif;
+  font-size: 0.7em;
+  color: #a6a9ab;
+}
+body .container #main #news #latest article h4,
+body .container #main #news #latest article time {
+  font-size: 1em;
+  color: #525253;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+body .container #main #news #latest article span {
+  color: #fe7e00;
+}
+body .container #main #news #latest article .more {
+  color: #fe7e00;
+  text-decoration: underline;
+}
+body .container #main #news #latest .border {
+  height: 187px;
+  padding-top: 10px;
+}
+body .container #main #news #latest h3 {
+  color: #fe7e00;
+}
+body .container #main #news #latest h3 span {
+  font-family: "Sansa Pro Light", Verdana, sans-serif;
+  color: #525253;
+}
+body .container #main #news #latest .follow {
+  background: url("../images/see.png") left center no-repeat;
+  padding: 5px 0 0 20px;
+}
+body .container #main #news .border {
+  border-top: 3px solid #525253;
+  border-bottom: 1px solid #8b8b8b;
+}
+body .container #main #news .news {
+  padding: 20px;
+}
+body .container #main #news .news h3 {
+  padding: 10px 10px 10px 0;
+  margin: 0;
+  font-size: 1.2em;
   font-family: "Sansa Con Pro Black", Verdana, sans-serif;
 }
-body #wrapper #main #news #latest {
-  max-width: 50%;
+body .container #main #news .news #focus {
+  padding: 0 20px 0 0;
+}
+body .container #main #news .news #focus .focus-info {
+  color: #525253;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+  background-color: #fdc300;
+  max-width: 220px;
+  padding: 10px;
+}
+body .container #main #news .news #focus .border {
+  padding-top: 10px;
+}
+body .container #main #news .news #focus h3 {
+  color: #fdc300;
+}
+body .container #main #news .news #tweeter {
+  padding: 0;
+}
+body .container #main #news .news #tweeter h3 {
+  padding-left: 40px;
+  background: url("../images/tw-bird.png") left center no-repeat;
+  color: #00b0de;
+}
+body .container #main #news .news #tweeter .follow {
+  background: url("../images/tw-follow.png") left center no-repeat;
+  padding: 5px 0 0 20px;
+}
+body .container #main #news .news #tweeter .btns {
+  position: absolute;
+  right: 5px;
+  bottom: 25px;
+  cursor: pointer;
+}
+body .container #main #news .follow {
+  float: right;
+  color: #525253;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+body #footer {
+  width: 100%;
+  margin-top: 15px;
+  padding: 0;
+  background-color: #ccc4bd;
+  font-family: Verdana, sans-serif;
+  font-size: 0.7em;
+}
+body #footer a,
+body #footer a:visited {
+  color: #525253;
+  text-decoration: none;
+}
+body #footer h4,
+body #footer h5 {
+  font-family: "Sansa Pro Black", Verdana, sans-serif;
+  font-size: 1.5em;
+  padding: 10px 0 10px 0;
+}
+body #footer h5 {
+  font-size: 1.2em;
+}
+body #footer .footer {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0;
+}
+body #footer .footer div {
+  border-right: 1px solid #e2dcd7;
+  height: 158px;
+}
+@media (max-width: 700px) {
+  body #footer .footer div {
+    border: none;
+  }
+}
+body #footer .footer div:last-child {
+  border: none;
+}
+body #footer .footer ul {
+  list-style-type: none;
+  float: left;
+  padding: 10px;
+}
+body #footer .bottom {
+  background-color: #bcb3ab;
+  border-top: 1px solid #e2dcd7;
+}
+body #footer .bottom ul {
+  width: 350px;
+  margin: 0 auto;
+  padding: 0;
+}
+body #footer .bottom li {
+  display: inline-block;
+  padding: 15px 0 15px 0;
+}
+body #footer .bottom li a {
+  padding: 0 15px 0 15px;
+  border-right: 1px solid #534f4b;
+}
+body #footer .bottom li:last-child a {
+  border: none;
 }
